@@ -1,0 +1,551 @@
+/* Estilos generales */
+
+body.cuerpoinicio {background-image: url(../assets/fondo\ 2.png);}
+body.cuerpox100pre {background-image:url(../assets/fondo.png);}
+body.cuerpoyhlqmdlg {background-image:url(../assets/yhlllfon2.jpg);}
+body.cuerpoeutdm {background-image: url(../assets/eutfondo.jpg);}
+body.cuerpouvst {background-image: url(../assets/uvstfondo.jpg);}
+body.cuerponslqvpm { background-color:rgb(216, 200, 180) ;
+}
+
+/* Estilos para el encabezado */
+
+
+/* Estilo para el fondo naranja del menú de navegación */
+.navbar-orange {
+    background-color: orange;
+}
+/* Estilos para el fondo negro y letras blancas del header x100pre */
+.negro {
+    background-color: black; 
+}
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white; 
+}
+
+.navbar-toggler-icon {
+    color: red;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid white; 
+}
+
+
+/* Estilos para el fondo morado y letras azules yhlqmdlg */
+.morado {
+    background-color: #3b2372; 
+}
+
+.navbar-blue .navbar-brand,
+.navbar-blue .nav-link {
+    color: #ffffff; 
+}
+
+.navbar-toggler {
+    color: #3f9797;
+    background-color: blue;
+}
+
+/* Estilos para el fondo rojo y letras negras eutdm */
+.header-rojo {
+    background-color: #752121; 
+}
+
+/* Estilos para las letras de color negro */
+.navbar-nav-negro .navbar-brand,
+.navbar-nav-negro .nav-link {
+    color: #000000 !important; 
+}
+
+/* Estilos para el fondo naranja y letras azules uvst */
+.header-naranja {
+    background-color: #FFA500; 
+}
+
+.navbar-nav-azul .navbar-brand,
+.navbar-nav-azul .nav-link {
+    color: #0000FF !important; 
+}
+
+    
+main {background-color: #222;
+border-radius: 10px;
+padding: 4px;
+margin: 5px;}
+main.parrafox100pre {
+    background-color: #222;
+    color: #fff;
+    margin: 5px;
+}
+main.parrafoinicio {
+    background-color: #222;
+    color: #fff;
+    margin: 5px;
+}
+main.parrafoyhlqmdlg {
+    background-color:#171150;
+    color: #fff;
+    margin: 5px;
+}
+main.parrafoeutdm {
+    background-color:#5c1616;
+    color: #fff;
+    margin: 5px;
+}
+main.parrafouvst {
+    background-color:#c74028;
+    color: #ffffff;
+    margin: 5px;
+}
+main.parrafonslqvpm {
+    background-color:rgb(121, 37, 37);
+    color: #ffffff;
+    margin: 5px;
+}
+/* Estilos para la sección de álbumes */
+nav.albumes {
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav.albumes ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.albumes li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+nav.albumes a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav.albumes h2 {
+    border: 4px solid #ffffff;
+    padding: 4px;
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    background-color: #222222;
+}
+
+nav.albumes img {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    height: auto;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.main-parrafo {
+    border: 5px solid #ffffff;
+    padding: 5px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #eb6ecb;
+}
+
+.main-parrafo.dos {
+    background-color: #78f7fc;
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #3f9797;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.footer-copyright {
+    background-color: #803b6e;
+    padding: 10px 0;
+}
+
+
+
+/* Estilos generales */
+body.cuerpo {
+    background-image: url(../assets/empty-showcase-abstract-pastel-color-background-3d-illustration-free-vector.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.albumes ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.albumes li {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.albumes li a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.parrafo {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #222;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #3f9797;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.footer-copyright {
+    background-color: #803b6e;
+    padding: 10px 0;
+}
+
+.collage {
+    display: flex;
+    gap: 5px; 
+}
+
+.fila {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fila img {
+    width: 400px;
+    height: 400px;
+}
+
+.fila img:last-child {
+    margin-right: 0; 
+}
+
+.text-box {
+    flex: 1;
+    background-color: #131212;
+    padding: 20px 2px; 
+    gap: 5px;
+    border-radius: 5px; 
+    color: white;
+}
+
+.inicios {text-align: center;}
+
+
+.spotify-images-uvst {
+    display: flex;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.spotify-images-uvst img {
+    max-width: 50%; 
+    height: auto;
+    border: 5px solid #000; 
+    border-radius: 5px; 
+}
+
+.spotify-images-uvst img:first-child {
+    flex: 1; 
+}
+
+.spotify-images-uvst img:last-child {
+    flex: 1; 
+}
+
+.spotify-images-nadie-sabe {
+    display: flex;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.spotify-images-nadie-sabe img {
+    max-width: 50%; 
+    height: auto;
+    border: 5px solid #000; 
+    border-radius: 5px; 
+}
+
+.spotify-images-nadie-sabe img:first-child {
+    flex: 1; 
+}
+
+.spotify-images-nadie-sabe img:last-child {
+    flex: 1; 
+}
+
+.spotify-images-x100pre {
+    display: flex;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.spotify-images-x100pre img {
+    max-width: 50%; 
+    height: auto;
+    border: 5px solid #ffffff; 
+    border-radius: 5px; 
+}
+
+.spotify-images-x100pre img:first-child {
+    flex: 1; 
+}
+
+.spotify-images-x100pre img:last-child {
+    flex: 1; 
+}
+
+.spotify-images-yhlqmdlg {
+    display: flex;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.spotify-images-yhlqmdlg img {
+    max-width: 50%; 
+    height: auto;
+    border: 5px solid #ffffff; 
+    border-radius: 5px; 
+}
+
+.spotify-images-yhlqmdlg img:first-child {
+    flex: 1; 
+}
+
+.spotify-images-yhlqmdlg img:last-child {
+    flex: 1; 
+}
+
+.spotify-images-eutdm {
+    display: flex;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.spotify-images-eutdm img {
+    max-width: 50%; 
+    height: auto;
+    border: 5px solid #ffffff; 
+    border-radius: 5px; 
+}
+
+.spotify-images-eutdm img:first-child {
+    flex: 1; 
+}
+
+.spotify-images-eutdm img:last-child {
+    flex: 1; 
+}
+
+.spotify-player {
+    width: 100%;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1289px) {
+    .spotify-images {
+        flex-direction: column; 
+    }
+    
+    .spotify-images img {
+        max-width: 100%; 
+    }
+}
+ 
+div{
+    margin: 5px;
+}
+
+/* Estilos generales para pantallas grandes */
+.collage {
+    display: flex;
+}
+
+.fila {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    flex: 1;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1216px) {
+    .collage {
+        flex-direction: column; 
+    }
+
+    .fila {
+        flex: 1;
+    }
+
+    .fila img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-box {
+        font-size: 14px;
+    }
+
+    .fila img {
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
+/* Media Query para iPad Air y dispositivos similares */
+@media (max-width: 820px) {
+    .collage {
+        flex-direction: column; 
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .fila img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    /* Establece el ancho del texto al 100% del ancho disponible */
+    .text-box {   
+        max-width: 100%;
+    }
+}
+/* Establece la transición para los botones y las imágenes */
+.nav-link, .album-image {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Aplica la animación al pasar el cursor sobre los botones */
+  .nav-link:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Aplica la animación al pasar el cursor sobre las imágenes */
+  .album-image:hover {
+    transform: scale(1.1);
+  }
+  /* Animación para imágenes en la página principal */
+.albumes li img {
+  transition: transform 0.3s; /* Duración de la animación 0.3 segundos */
+}
+
+.albumes li img:hover {
+  transform: scale(1.1); /* Al pasar el cursor, escala la imagen */
+}
+
+/* Animación para los títulos en la página principal */
+.albumes h2 a {
+  transition: color 0.3s; /* Duración de la animación 0.3 segundos */
+}
+
+.albumes h2 a:hover {
+  color: #FF0000; /* Al pasar el cursor, cambia el color del texto */
+}
+
+/* Estilo base para elementos del pie de página */
+.footer {
+    opacity: 0; /* Inicialmente, el pie de página estará invisible */
+    transition: opacity 0.5s; /* Agrega una transición suave */
+  }
+  
+  /* Aplica la animación al pasar el cursor sobre el pie de página */
+  .footer:hover {
+    opacity: 1; /* Al pasar el cursor, el pie de página se volverá visible */
+  }
+
+  /* Estilo base para elementos de redes sociales */
+.footer-social a {
+    display: inline-block;
+    transform: translateY(0); /* Inicialmente, los elementos están en su posición normal */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición con efecto de rebote */
+  }
+  
+  /* Aplica la animación al pasar el cursor sobre los elementos de redes sociales */
+  .footer-social a:hover {
+    transform: translateY(-5px); /* Al pasar el cursor, los elementos subirán 5px */
+  }
+  
+/* Estilo base para el logo */
+.footer-logo img {
+    transform: rotate(0deg); /* Inicialmente, el logo no estará girado */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición con efecto de giro */
+  }
+  
+  /* Aplica la animación al pasar el cursor sobre el logo */
+  .footer-logo img:hover {
+    transform: rotate(360deg); /* Al pasar el cursor, el logo girará 360 grados */
+  }
+  
