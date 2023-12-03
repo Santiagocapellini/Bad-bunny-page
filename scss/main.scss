@@ -1,101 +1,83 @@
 /* Estilos generales */
-
-body.cuerpoinicio {background-image: url(../assets/fondo\ 2.png);}
+body.cuerpoinicio {background-image: url(../assets/fondo_2.png);}
 body.cuerpox100pre {background-image:url(../assets/fondo.png);}
 body.cuerpoyhlqmdlg {background-image:url(../assets/yhlllfon2.jpg);}
 body.cuerpoeutdm {background-image: url(../assets/eutfondo.jpg);}
 body.cuerpouvst {background-image: url(../assets/uvstfondo.jpg);}
+body.cuerponslqvpm { background-color:rgb(216, 200, 180) ;
+}
+
+/* estilos para variables */
+
+:root {
+    --negro: black;
+    --blanco: #ffffff;
+    --gris-oscuro: #3b3b3b;
+    --rojo: #FF0000;
+    --fondo-inicio: #000;
+    --fondo-x100pre: rgb(66, 66, 66);
+    --fondo-yhlqmdlg: rgb(7, 75, 139);
+    --fondo-eutdm: #5c1616;
+    --fondo-uvst: rgb(192, 102, 41);
+    --fondo-nslqvpm: rgb(112, 42, 42);
+  }
+
 /* Estilos para el encabezado */
-
-
-/* Estilo para el fondo naranja del menú de navegación */
-.navbar-orange {
-    background-color: orange;
-}
-/* Estilos para el fondo negro y letras blancas del header x100pre */
 .negro {
-    background-color: black; 
-}
-.navbar-dark .navbar-brand,
-.navbar-dark .nav-link {
-    color: white; 
-}
-
-.navbar-toggler-icon {
-    color: red;
-}
-
-.navbar-dark .navbar-toggler {
-    border: 1px solid white; 
+    background-color: var(--negro); 
 }
 
 
-/* Estilos para el fondo morado y letras azules yhlqmdlg */
-.morado {
-    background-color: #3b2372; 
-}
 
-.navbar-blue .navbar-brand,
-.navbar-blue .nav-link {
-    color: #ffffff; 
-}
-
-.navbar-toggler {
-    color: #3f9797;
-    background-color: blue;
-}
-
-/* Estilos para el fondo rojo y letras negras eutdm */
-.header-rojo {
-    background-color: #752121; 
-}
-
-/* Estilos para las letras de color negro */
-.navbar-nav-negro .navbar-brand,
-.navbar-nav-negro .nav-link {
-    color: #000000 !important; 
-}
-
-/* Estilos para el fondo naranja y letras azules uvst */
-.header-naranja {
-    background-color: #FFA500; 
-}
-
-.navbar-nav-azul .navbar-brand,
-.navbar-nav-azul .nav-link {
-    color: #0000FF !important; 
-}
-
-    
-main {background-color: #222;
-border-radius: 20px;
-padding: 4px;
-margin: 5px;}
-main.parrafox100pre {
-    background-color: #222;
-    color: #fff;
+@mixin parrafoBase {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     margin: 5px;
 }
-main.parrafoinicio {
-    background-color: #222;
-    color: #fff;
-    margin: 5px;
+
+/* Estilos para la sección de main */
+p.inicio {
+    @include parrafoBase;
+    color: var(--blanco);
+    background-color: var(--fondo-inicio);
 }
-main.parrafoyhlqmdlg {
-    background-color:#171150;
-    color: #fff;
-    margin: 5px;
+
+p.eutdm {
+    @include parrafoBase;
+    color: var(--blanco);
+    background-color: var(--fondo-eutdm);
 }
-main.parrafoeutdm {
-    background-color:#5c1616;
-    color: #fff;
-    margin: 5px;
+
+p.nslqvpm {
+    @include parrafoBase;
+    color: var(--blanco);
+    background-color: var(--fondo-nslqvpm);
 }
-main.parrafouvst {
-    background-color:#bb5e5e;
-    color: #fff;
-    margin: 5px;
+
+p.uvst {
+    @include parrafoBase;
+    color: var(--blanco);
+    background-color: var(--fondo-uvst);
 }
+
+p.x100pre {
+    @include parrafoBase;
+    color: var(--blanco);
+    background-color: var(--fondo-x100pre);
+}
+
+p.yhlqmdlg {
+    @include parrafoBase;
+    color: var(--blanco);
+    background-color: var(--fondo-yhlqmdlg);
+}
+
+
 /* Estilos para la sección de álbumes */
 nav.albumes {
     padding: 20px 0;
@@ -119,12 +101,12 @@ nav.albumes a {
 }
 
 nav.albumes h2 {
-    border: 4px solid #ffffff;
+    border: 4px solid var(--blanco);
     padding: 4px;
     display: block;
     margin-bottom: 8px;
     border-radius: 20px;
-    background-color: #222222;
+    background-color: var(--negro);
 }
 
 nav.albumes img {
@@ -132,30 +114,15 @@ nav.albumes img {
     width: 100px;
     height: 100px;
     height: auto;
-    border: 1px solid #ffffff;
+    border: 5px solid var(--blanco);
     padding: 10px;
     margin-bottom: 10px;
 }
 
-.main-parrafo {
-    border: 5px solid #ffffff;
-    padding: 5px;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: #eb6ecb;
-}
-
-.main-parrafo.dos {
-    background-color: #78f7fc;
-}
-
-
-
 /* Estilos para el pie de página */
 footer {
     background-color: #3f9797;
-    color: #fff;
+    color: var(--blanco);
     padding: 20px 0;
     text-align: center;
     border-radius: 20px;
@@ -181,27 +148,13 @@ footer {
 }
 
 .footer-social a {
-    color: #fff;
+    color: var(--blanco);
     text-decoration: none;
     margin: 0 10px;
     font-size: 18px;
 }
 
-.footer-copyright {
-    background-color: #803b6e;
-    padding: 10px 0;
-}
-
-
-
 /* Estilos generales */
-body.cuerpo {
-    background-image: url(../assets/empty-showcase-abstract-pastel-color-background-3d-illustration-free-vector.jpg);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-}
 
 .albumes ul {
     list-style: none;
@@ -216,14 +169,14 @@ body.cuerpo {
 
 .albumes li a {
     text-decoration: none;
-    color: #ffffff; 
+    color: var(--blanco); 
 }
 
 .parrafo {
     margin: 10px 0;
     padding: 20px;
     border-radius: 15px;
-    background-color: #222;
+    background-color: var(--negro);
 }
 
 .footer-container {
@@ -234,28 +187,29 @@ body.cuerpo {
     margin: 0 auto;
     padding: 0 20px;
     background-color: #3f9797;
-}
-
-.footer-logo img {
-    width: 100px;
-    height: auto;
-}
-
-.footer-info p {
-    margin: 10px 0;
-}
-
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-.footer-copyright {
-    background-color: #803b6e;
-    padding: 10px 0;
-}
+  
+    .footer-logo img {
+      width: 100px;
+      height: auto;
+    }
+  
+    .footer-info p {
+      margin: 10px 0;
+    }
+  
+    .footer-social a {
+      color: var(--blanco);
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+  
+    .footer-copyright {
+      background-color: #803b6e;
+      padding: 10px 0;
+    }
+  }
+  
 
 .collage {
     display: flex;
@@ -279,40 +233,71 @@ body.cuerpo {
 
 .text-box {
     flex: 1;
-    background-color: #131212;
+    background-color: var(--negro);
     padding: 20px 2px; 
     gap: 5px;
     border-radius: 5px; 
-    color: white;
+    color: var(--blanco);
 }
 
 .inicios {text-align: center;}
 
-
-.spotify-images {
+@mixin spotify-images {
     display: flex;
-    gap: 10px; 
-    padding: 10px; 
+    gap: 10px;
+    padding: 10px;
+
+    img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    img:first-child,
+    img:last-child {
+        flex: 1;
+    }
 }
 
-.spotify-images img {
-    max-width: 100%; 
-    height: auto;
-    border: 5px solid #000; 
-    border-radius: 5px; 
+@mixin border-style($color) {
+    border: 5px solid $color;
 }
 
-.spotify-images img:first-child {
-    flex: 1; 
+.spotify-images-uvst {
+    @include spotify-images;
+    img {
+        @include border-style(var(--negro));
+    }
 }
 
-.spotify-images img:last-child {
-    flex: 1; 
+.spotify-images-nadie-sabe {
+    @include spotify-images;
+    img {
+        @include border-style(var(--negro));
+    }
 }
 
-.spotify-player {
-    width: 100%;
+.spotify-images-x100pre {
+    @include spotify-images;
+    img {
+        @include border-style(var(--blanco));
+    }
 }
+
+.spotify-images-yhlqmdlg {
+    @include spotify-images;
+    img {
+        @include border-style(var(--blanco));
+    }
+}
+
+.spotify-images-eutdm {
+    @include spotify-images;
+    img {
+        @include border-style(var(--blanco));
+    }
+}
+
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 1289px) {
@@ -391,6 +376,48 @@ div{
         max-width: 100%;
     }
 }
+
+/* ... (otros estilos) ... */
+
+/* Media Query para pantallas pequeñas (320px) */
+@media (max-width: 320px) {
+    .footer-info {
+        padding: 0 10px; /* Ajusta el padding para evitar scroll horizontal */
+    }
+
+    .footer-info p {
+        margin: 5px 0; /* Ajusta el espacio entre párrafos */
+    }
+
+    .footer-logo img {
+        width: 80%; /* Ajusta el tamaño del logo */
+    }
+
+    .footer-social a {
+        font-size: 14px; /* Ajusta el tamaño de las redes sociales */
+    }
+}
+
+/* Media Query para pantallas pequeñas (767px) */
+@media only screen and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 50%; /* Ajusta el tamaño del logo */
+    }
+
+    .footer-info p {
+        margin: 5px 0;
+    }
+
+    .footer-social a {
+        font-size: 16px;
+    }
+}
+
 /* Establece la transición para los botones y las imágenes */
 .nav-link, .album-image {
     transition: transform 0.3s ease;
@@ -420,7 +447,7 @@ div{
 }
 
 .albumes h2 a:hover {
-  color: #FF0000; /* Al pasar el cursor, cambia el color del texto */
+  color: var(--rojo); /* Al pasar el cursor, cambia el color del texto */
 }
 
 /* Estilo base para elementos del pie de página */
@@ -456,5 +483,16 @@ div{
   .footer-logo img:hover {
     transform: rotate(360deg); /* Al pasar el cursor, el logo girará 360 grados */
   }
-  
-  
+  /* Estilos generales para .footer-info */
+
+
+/* Media Query para pantallas más pequeñas, como 320px */
+@media (max-width: 320px) {
+    .footer-info {
+        padding: 0 10px; /* Ajusta el padding para evitar scroll horizontal */
+    }
+
+    .footer-info p {
+        margin: 5px 0; /* Ajusta el espacio entre párrafos */
+    }
+}
